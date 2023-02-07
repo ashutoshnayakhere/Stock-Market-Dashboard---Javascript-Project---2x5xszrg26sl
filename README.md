@@ -1,4 +1,4 @@
-Welcome To stock  Marrket Project
+Welcome To stock  Market Project
 
 There is a Ui Dashboard .
 Here You can Fetch
