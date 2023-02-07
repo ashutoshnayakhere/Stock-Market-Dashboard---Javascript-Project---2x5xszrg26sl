@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/7d68c97d2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Stock Market Project</title>
+  </head>
+  
+  <body>
+    <main id="container">
+      <div class="head-section">
+        <span id="arrow-up"><i class="fa-sharp fa-solid fa-arrow-up"></i></span>
+        <h4> STOCK MARKET DASHBOARD </h4>
+        <span id="arrow-down"><i class="fa-sharp fa-solid fa-arrow-down"></i></span>
+      </div>
 
+     <!-- OptionsList -->
+      <div class="option-menu">
+        <div class="search">
+          <div class="search-bar">
+            <input id="search-input"type="text" placeholder="Search for Symbol...."/>
+            <button id="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <div class="option">
+          <button class="option-button" id="intraday" value="INTRADAY">
+            INTRADAY
+          </button>
+          <button class="option-button" id="daily" value="DAILY_ADJUSTED">
+            DAILY
+          </button>
+          <button class="option-button" id="weekly" value="WEEKLY">
+            WEEKLY
+          </button>
+          <button class="option-button" id="monthly" value="MONTHLY">
+            MONTHLY
+          </button>
+        </div>
+      </div>
+           
+      <!-- watchlist Section -->
+      <div class="watchlist-section"> 
+        <div class="watchlist-heading">
+          <h3>YOUR WATCHLIST</h3>
+        </div>
+        <div class="watchlist-container" id="watchlist-container">
+         </div>
+    </main>
+    <script src="App.js"></script>
+  </body>
+</html>
