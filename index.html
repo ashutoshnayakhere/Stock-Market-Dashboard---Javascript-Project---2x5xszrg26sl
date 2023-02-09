@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://freepngimg.com/thumb/stock_market/26072-3-stock-market-file-thumb.png">
     <script src="https://kit.fontawesome.com/7d68c97d2f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Stock Market Project</title>
   </head>
   
   <body>
-    <main id="container">
-      <div class="head-section">
+    <div id="main">
+  
+       <div class="form" >
+      <div class="main-section">
         <span id="arrow-up"><i class="fa-sharp fa-solid fa-arrow-up"></i></span>
-        <h4> STOCK MARKET DASHBOARD </h4>
+       
+        <h4 class="shine"> STOCK MARKET DASHBOARD </h4>
         <span id="arrow-down"><i class="fa-sharp fa-solid fa-arrow-down"></i></span>
       </div>
 
@@ -21,10 +25,8 @@
       <div class="option-menu">
         <div class="search">
           <div class="search-bar">
-            <input id="search-input"type="text" placeholder="Search for Symbol...."/>
-            <button id="search-button">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            <input id="search-input" type="text" placeholder="Search for Symbol..(EX:AMZN , IBM ,SBI)"/>
+         
           </div>
         </div>
         <div class="option">
@@ -41,16 +43,29 @@
             MONTHLY
           </button>
         </div>
+           <button id="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
       </div>
-           
+      </div>
       <!-- watchlist Section -->
-      <div class="watchlist-section"> 
-        <div class="watchlist-heading">
-          <h3>YOUR WATCHLIST</h3>
+      <div class="watchlist"> 
+        <div class="watchlist-data">
+         
         </div>
-        <div class="watchlist-container" id="watchlist-container">
+        <div class="watchlist-list" id="watchlist-list">
+          <h3>YOUR WATCHLIST</h3>
          </div>
-    </main>
+         <div class="footer">
+          <h5>Project Objective</h5>
+          <p>Search Your Favorite Stock In The Searchbar And Select Time Button It Will Fetch Their Data In Watchlist
+         <a href="https://github.com/ashutoshnayakhere" target="_blank"><i class="fa-brands fa-github"></i></a> 
+         <a href="https://www.instagram.com/ashutosh_nayak_._/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        
+        </p>
+
+         </div>
+        </div>
     <script src="App.js"></script>
   </body>
     

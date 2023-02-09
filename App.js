@@ -1,7 +1,7 @@
 window.addEventListener("load", () => { loadWatchlist();});
 
 //Storing all Element
-const mainContainer = document.getElementById("container");
+const mainmain = document.getElementById("main");
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 const optionButton = document.querySelectorAll(".option-button");
@@ -9,7 +9,7 @@ const intraday = document.getElementById("intraday");
 const daily = document.getElementById("daily");
 const weekly = document.getElementById("weekly");
 const monthly = document.getElementById("monthly");
-const listContainer = document.getElementById("watchlist-container");
+const listmain = document.getElementById("watchlist-list");
 let closeButton = document.getElementById("close");
 let listItem;
 
@@ -128,7 +128,7 @@ function createNewListElement(
             <i class="${fetchSymbol}-${fetchType} fa-solid fa-xmark"></i>
            </li>`;
 
-    listContainer.appendChild(listItem);
+    listmain.appendChild(listItem);
     let watchlist = document.querySelector(".watchlist:last-child");
     let priceCheck = watchlist.querySelector(".price");
 
@@ -168,9 +168,9 @@ function getLastFiveDetails(fetchedObj, fetchType) {
 function closeElement(event) {
   event.stopPropagation();
   let clickedElement = event.target.classList[0];
-  let elementToBeRemoved = listContainer.querySelector(`.${clickedElement}`);
+  let elementToBeRemoved = listmain.querySelector(`.${clickedElement}`);
   let toBeRemoved = document.getElementById(elementToBeRemoved.classList[0]); // ul= watchlist item
-  listContainer.removeChild(toBeRemoved);
+  listmain.removeChild(toBeRemoved);
   myWatchlist.delete(clickedElement);
   localStorage.setItem("localList", JSON.stringify([...myWatchlist]));
   removeDetails(elementToBeRemoved);
@@ -180,8 +180,8 @@ function closeElement(event) {
 function removeDetails(event) {
   // console.log(event)
   let itemID = event.id;
-  let deleteElement = listContainer.querySelector(`.${itemID}-detail`);
-  listContainer.removeChild(deleteElement);
+  let deleteElement = listmain.querySelector(`.${itemID}-detail`);
+  listmain.removeChild(deleteElement);
   event.setAttribute(`data-${itemID}`, 0);
 }
 
