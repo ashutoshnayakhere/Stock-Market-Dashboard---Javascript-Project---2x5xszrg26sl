@@ -111,7 +111,8 @@ function createNewListElement(
   fetchType
 ) {
   if (myWatchlist.has(`${fetchSymbol}-${fetchType}`)) {
-    console.log("aleady present");
+//    console.log("aleady present");
+    alert("aleady present");
   } else {
     listItem = document.createElement("ul");
     listItem.classList.add(`${fetchSymbol}-${fetchType}`);
